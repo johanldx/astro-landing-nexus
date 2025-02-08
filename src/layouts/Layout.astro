@@ -1,22 +1,46 @@
+---
+import "../styles/global.css"
+
+const { title = "Nexus ESGI - Votre vision, notre expertise", description = "Nexus ESGI vous accompagne dans le développement, la cybersécurité, l'infrastructure, la blockchain et l'IoT pour concrétiser vos projets numériques.", keywords = "Nexus ESGI, Junior Entreprise, développement web, cybersécurité, infrastructure, blockchain, IoT, ESGI"} = Astro.props;
+---
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<link rel="shortcut icon" href="/assets/favicon.ico">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+
+		<title>{title}</title>
+		<meta name="description" content={description}>
+		<meta name="keywords" content={keywords}>
+		<meta name="author" content="Nexus ESGI">
+		<meta property="og:title" content="Nexus ESGI - Votre vision, notre expertise">
+		<meta property="og:description" content="Experts en développement, cybersécurité, blockchain et infrastructure, nous vous accompagnons dans vos projets digitaux.">
+		<meta property="og:image" content="https://nexusesgi.fr/assets/preview.png">
+		<meta property="og:url" content="https://nexusesgi.fr">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Nexus ESGI">
+		<meta property="og:locale" content="fr_FR">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Nexus ESGI - Votre vision, notre expertise">
+		<meta name="twitter:description" content="Experts en développement, cybersécurité, blockchain et infrastructure, nous vous accompagnons dans vos projets digitaux.">
+		<meta name="twitter:image" content="https://nexusesgi.fr/assets/preview.png">
+		<link rel="canonical" href="https://nexusesgi.fr">
+		<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta http-equiv="X-Frame-Options" content="deny">
+		<meta http-equiv="X-Content-Type-Options" content="nosniff">
+		<meta name="geo.region" content="FR-IDF">
+		<meta name="geo.placename" content="Paris">
+		<meta name="geo.position" content="48.8566;2.3522">
+		<meta name="ICBM" content="48.8566, 2.3522">		
 	</head>
-	<body>
+	<body class="bg-neutral-100 font-author">
 		<slot />
 	</body>
+	<script type="module" src="/src/scripts/aos.js"></script>
+	<script async src="https://tally.so/widgets/embed.js"></script>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

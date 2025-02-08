@@ -1,0 +1,44 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+
+---
+
+<Layout>
+	<Header />
+
+    <div class="m-10 container mx-auto p-5">
+        <h1 class="font-medium text-3xl text-nexus-blue">Mentions légales</h1>
+
+        <h2 class="font-medium text-xl mt-5 text-nexus-blue">Identité</h2>
+        <p class="text-nexus-blue"><span class="font-medium">Nom de l'entreprise :</span> NEXUS ESGI JUNIOR CONSEIL</p>
+        <p class="text-nexus-blue"><span class="font-medium">Forme juridique :</span> Association loi 1901</p>
+        <p class="text-nexus-blue"><span class="font-medium">Adresse du siège social :</span> 242 RUE DU FBG ST ANTOINE 75012 PARIS 12</p>
+        <p class="text-nexus-blue"><span class="font-medium">Adresse e-mail :</span> hello@nexusesgi.fr</p>
+        <p class="text-nexus-blue"><span class="font-medium">Numéro de téléphone :</span> Indisponible</p>
+        <p class="text-nexus-blue"><span class="font-medium">Numéro SIRET :</span> 924 486 665 00012</p>
+
+        <h2 class="font-medium text-xl mt-5 text-nexus-blue">Hébergement du site</h2>
+        <p class="text-nexus-blue"><span class="font-medium">Nom de l'hébergeur :</span> HALOAGENCY</p>
+        <p class="text-nexus-blue"><span class="font-medium">Adresse de l'hébergeur :</span> 66 AV DES CHAMPS ELYSEES 75008 PARIS 8</p>
+        <p class="text-nexus-blue"><span class="font-medium">Numéro de téléphone :</span> Indisponible</p>
+
+        <h2 class="font-medium text-xl mt-5 text-nexus-blue">Propriété intellectuelle</h2>
+        <p class="text-nexus-blue">Tous les contenus présents sur ce site (textes, images, illustrations, vidéos, logos, etc.) sont protégés par les lois en vigueur sur la propriété intellectuelle.</p>
+        <p class="text-nexus-blue">La reproduction, distribution, modification ou utilisation de ces contenus est strictement interdite sans autorisation préalable.</p>
+
+        <h2 class="font-medium text-xl mt-5 text-nexus-blue">Responsable de la publication</h2>
+        <p class="text-nexus-blue"><span class="font-medium">Nom du responsable de la publication :</span> Johan Ledoux</p>
+        <p class="text-nexus-blue"><span class="font-medium">Adresse e-mail :</span> johan.ledoux25@gmail.com</p>
+
+    </div>
+		
+
+	<div class="bg-nexus-blue">
+		<div data-aos="fade">
+			<Footer />
+		</div>
+	</div>
+</Layout>

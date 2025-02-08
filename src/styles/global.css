@@ -1,0 +1,11 @@
+@import url("https://api.fontshare.com/v2/css?f[]=author@200,201,300,301,400,401,500,501,600,601,700,701,1,2&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-nexus-pink: #E28FBF;
+    --color-nexus-blue: #1B1A39;
+}
+
+body {
+    font-family:'Author', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

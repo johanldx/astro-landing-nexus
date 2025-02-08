@@ -1,0 +1,30 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import GlideSlider from "../components/GlideSlider.jsx";
+import FAQ from "../components/Faq.jsx"
+import Team from "../assets/images/team.jpg"
+import Nexintosh from "../assets/logos/nexintosh.png"
+
+---
+
+<Layout>
+	<Header />
+
+    <div class="mt-20 mb-50 container mx-auto p-5 text-center">
+        <h1 class="text-center font-medium text-3xl text-nexus-blue">Erreur 404</h1>
+        <p class="text-nexus-blue m-5">Désolé, cette page est aussi introuvable qu’un développeur un lundi matin avant son café. Essayez plutôt un retour à l’accueil ?</p>
+        <a href="/" class="hover:scale-110 active:scale-95 transition-transform duration-300 inline-flex gap-2 bg-nexus-pink py-3 px-5 font-medium text-neutral-100 rounded-full">
+			Retour
+		</a>
+    </div>
+		
+
+	<div class="bg-nexus-blue">
+		<div data-aos="fade">
+			<Footer />
+		</div>
+	</div>
+</Layout>

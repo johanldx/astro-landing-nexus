@@ -1,11 +1,115 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import GlideSlider from "../components/GlideSlider.jsx";
+import FAQ from "../components/Faq.jsx"
+import Team from "../assets/images/team.jpg"
+import Nexintosh from "../assets/logos/nexintosh.png"
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title = "Nexus ESGI - Votre vision, notre expertise" description = "Nexus ESGI vous accompagne dans le développement, la cybersécurité, l'infrastructure, la blockchain et l'IoT pour concrétiser vos projets numériques." keywords = "Nexus ESGI, Junior Entreprise, développement web, cybersécurité, infrastructure, blockchain, IoT, ESGI">
+	<Header />
+
+	<div class="mt-10 text-center container m-auto p-5">
+		<h1 class="text-center m-auto font-semibold text-3xl md:text-7xl md:w-2/3 text-nexus-blue">Transformez vos idées en solutions digitales</h1>
+		<p class="text-center m-auto mt-10 text-md md:w-3/4 text-nexus-blue">
+			Nexus ESGI est une Junior-Entreprise spécialisée en innovation numérique et développement technologique. Gérée par des étudiants 
+			passionnés de l’ESGI, notre mission est d’accompagner les entreprises dans la conception et la réalisation de solutions sur mesure.
+			Grâce à notre expertise technique et notre approche agile, nous apportons des solutions performantes et innovantes adaptées aux besoins 
+			de nos clients. En collaborant avec nous, vous bénéficiez d’un regard neuf, de compétences pointues et d’un engagement de qualité, tout 
+			en contribuant à la formation des talents de demain.
+		</p>
+		
+		<button data-tally-open="wgJ8qO" data-tally-width="400" data-tally-hide-title="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" class="hover:scale-110 active:scale-95 transition-transform duration-300 mt-10 inline-flex gap-2 bg-nexus-pink py-3 px-5 font-medium text-neutral-100 rounded-full">
+			Contactez-nous
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+			</svg>
+		</button>
+		<img class="rounded-xl md:w-1/2 m-auto mt-10" src={Team.src} alt="Photo d'équipe">
+		<div class="m-10">
+			<p class="text-nexus-blue"><span class="font-semibold text-3xl">2500</span> interveants potentiels issu de l'école n°1 en alternance</p>
+			<p class="text-nexus-blue"><span class="font-semibold text-3xl">25</span> collorateurs bénévoles pour vous accompagner</p>
+		</div>
+
+	</div>
+
+	<div class="mt-5 md:mt-20 h-42 bg-gradient-to-b from-neutral-100 to-nexus-blue"></div>
+	<div class="bg-nexus-blue py-10 px-5">
+		<div class="container m-auto mb-10">
+			<p class="text-neutral-100 text-center text-xl">Ils nous font confiance !</p>
+		</div>
+		<GlideSlider client:load />
+		<div data-aos="fade" class="container mx-auto flex flex-col md:flex-row items-start justify-between gap-10 m-30">
+			<!-- Colonne gauche avec effet sticky -->
+			<div class="w-full md:w-1/2 flex flex-col items-center text-center md:sticky top-10">
+				<h2 class="text-neutral-100 text-4xl font-medium md:w-2/3">De l’ingénierie au digital, nous transformons vos idées en réalité</h2>
+				<img class="w-75 mt-10" src={Nexintosh.src} alt="">
+			</div>
+		
+			<!-- Colonne droite -->
+			<div class="w-full md:w-1/2 flex flex-col items-start text-left">
+				<div>
+					<h3 class="text-neutral-100 text-2xl flex items-center gap-x-2">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15 h-15">
+							<path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+						</svg>												
+						Développement web
+					</h3>
+					<p class="text-neutral-100 mt-2">Création de plateformes web performantes et ergonomiques : sites vitrines, e-commerce et applications web.</p>
+					<hr class="border-gray-700 my-5 w-full">
+				</div>
+				<div>
+					<h3 class="text-neutral-100 text-2xl flex items-center gap-x-2">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15 h-15">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+						</svg>
+						Système, réseau et cloud
+					</h3>
+					<p class="text-neutral-100 mt-2">Mise en place d’infrastructures réseau, solutions cloud et gestion de l’hébergement sécurisé.</p>
+					<hr class="border-gray-700 my-5">
+				</div>
+				<div>
+					<h3 class="text-neutral-100 text-2xl flex items-center gap-x-2">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15 h-15">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+						</svg>
+						Architecture des logiciels
+					</h3>
+					<p class="text-neutral-100 mt-2">Conception et développement d’architectures logicielles robustes et évolutives.</p>
+					<hr class="border-gray-700 my-5">
+				</div>
+				<div>
+					<h3 class="text-neutral-100 text-2xl flex items-center gap-x-2">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15 h-15">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+						</svg>
+						Conseils stratégiques technologique
+					</h3>
+					<p class="text-neutral-100 mt-2">Prenez des décisions éclairées grâce à notre expertise pointue.</p>
+					<hr class="border-gray-700 my-5">
+				</div>
+				
+				<div>
+					<p class="text-neutral-100 mt-2">Notre domaine d'expertise inclue : Ingénierie Mobile et Objets Connectés, Intelligence Artificielle et Big Data, Ingénierie de la Blockchain, Ingénierie de la Réalité Virtuelle et Jeux Vidéo, Cybersécurité.</p>
+				</div>
+				  
+			</div>
+		</div>
+		
+		<div data-aos="fade" class="mt-30">
+			<h2 class="text-center text-4xl font-medium text-neutral-100">Vous vous posez des questions ? c’est normal !</h2>
+		
+			<FAQ client:load/>
+		
+		</div>
+	</div>
+	<div class="bg-nexus-blue">
+		<div data-aos="fade">
+			<Footer />
+		</div>
+	</div>
 </Layout>
