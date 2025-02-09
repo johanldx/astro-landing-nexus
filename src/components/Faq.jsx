@@ -11,8 +11,20 @@ const faqs = [
     answer: "Une étude est une mission confiée à la Junior-Entreprise pour répondre aux besoins spécifiques d’un client. Elle suit un processus structuré : analyse du projet, mise en œuvre de la solution et livraison des livrables (ex: produit final déployé, documentation technique, guide d'utilisation...). Adaptée aux exigences du marché, elle permet aux entreprises d’accéder à des services sur mesure, réalisés avec rigueur et méthodologie."
   },
   {
+    question: "Quels types de projets pouvez-vous prendre en charge ?",
+    answer: "Tous nos intervenants sont issus de l'ESGI, une école reconnue pour son excellence en informatique, et sont en apprentissage, ce qui leur permet de rester à la pointe des dernières technologies. Grâce à leur expertise variée, nous sommes en mesure de prendre en charge tout type de mission informatique : développement web, applications mobiles, cloud, DevOps, cybersécurité, intelligence artificielle, et bien plus encore."
+  },
+  {
+    question: "Combien de personnes travaillent sur un projet ?",
+    answer: "Le nombre d'intervenants mobilisés dépend de la nature et de la complexité de votre projet. Pour les projets simples, une seule personne peut suffire, tandis que les projets plus ambitieux peuvent nécessiter une équipe dédiée."
+  },
+  {
     question: "Comment fonctionne notre tarifiation ?",
     answer: "Notre système de tarification est structuré pour répondre à une grande variété de besoins, en divisant chaque domaine d’expertise en 5 niveaux de tarification basés sur la complexité de l'étude. Nous réalisons votre devis gratuitement."
+  },
+  {
+    question: "Offrez-vous des réductions pour les projets d’étudiants ou d’associations ?",
+    answer: "Oui, nous proposons des réductions adaptées à ces profils. Ces conditions seront discutées lors de l'élaboration du devis avec notre équipe commerciale."
   },
   {
     question: "Sommes-nous soumis à une obligation de résultat ?",
