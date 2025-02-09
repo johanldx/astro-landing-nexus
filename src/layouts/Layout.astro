@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import Banner from '../components/Banner.astro';
 
 const { title = "Nexus ESGI - Votre vision, notre expertise", description = "Nexus ESGI vous accompagne dans le développement, la cybersécurité, l'infrastructure, la blockchain et l'IoT pour concrétiser vos projets numériques.", keywords = "Nexus ESGI, Junior Entreprise, développement web, cybersécurité, infrastructure, blockchain, IoT, ESGI"} = Astro.props;
 ---
@@ -41,6 +42,7 @@ const { title = "Nexus ESGI - Votre vision, notre expertise", description = "Nex
 		<link rel="stylesheet" href="/aos.css">
 	</head>
 	<body class="bg-neutral-100 font-author">
+		<Banner content="Le site de Nexus a fait peau neuve ! Nous sommes proches du lancement. <a href='https://www.linkedin.com/company/nexus-esgi-junior-conseil/' target='_blank' class='inline-block underline'>Suivez-nous sur LinkedIn</a> pour plus de nouvelles ! ✨" />
 		<slot />
 	</body>
 	<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

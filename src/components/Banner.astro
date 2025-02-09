@@ -1,0 +1,8 @@
+---
+const { content = "" } = Astro.props;
+---
+{content.trim() && (
+  <div class="bg-nexus-blue px-4 py-3 text-white w-full">
+    <p class="text-center font-author text-sm font-medium" set:html={content}></p>
+  </div>
+)}
