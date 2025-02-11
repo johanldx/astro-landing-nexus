@@ -38,8 +38,24 @@ const { title = "Nexus ESGI - Votre vision, notre expertise", description = "Nex
 		<meta name="geo.placename" content="Paris">
 		<meta name="geo.position" content="48.8566;2.3522">
 		<meta name="ICBM" content="48.8566, 2.3522">
-		
 		<link rel="stylesheet" href="/aos.css">
+		<link rel="sitemap" href="/sitemap-index.xml" />
+
+		<!-- Matomo -->
+		<script is:inline>
+			var _paq = window._paq = window._paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="//analytics.nexusesgi.fr/";
+			_paq.push(['setTrackerUrl', u+'matomo.php']);
+			_paq.push(['setSiteId', '1']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
 	<body class="bg-neutral-100 font-author">
 		<Banner content="Le site de Nexus a fait peau neuve ! Nous sommes proches du lancement. <a href='https://www.linkedin.com/company/nexus-esgi-junior-conseil/' target='_blank' class='inline-block underline'>Suivez-nous sur LinkedIn</a> pour plus de nouvelles ! ✨" />
